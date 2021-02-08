@@ -34,6 +34,7 @@ document.getElementById('search-btn').addEventListener('click', function(){
 const displayMeal = meals =>{
     const mealsDiv = document.getElementById('meals-container');
     document.getElementById('meals-container').innerHTML = "";
+    document.getElementById('meal-ingredients').innerHTML = "";
     meals.forEach(meal => {
         const mealDiv = document.createElement('div');
         mealDiv.className = "meal-item";
@@ -64,22 +65,17 @@ const displayMeal = meals =>{
      const detail = document.createElement('div');
      document.getElementById('meal-ingredients').innerHTML = "";
      const detailsInfo = `
-         <div class="col">
-                    <div class="card in-details">
+         <div class="col in-details">
+                    <div class="card">
                     <img class="details-img" src="${details.strMealThumb}">
                     <div class="card-body">
-                        <h2 class="card-title">${details.strMeal}</h2>
+                        <h3 class="card-title">${details.strMeal}</h3>
                         <h4>Ingredients</h4>
-                            <p>${details.strIngredient1}</p>
-                            <p>${details.strIngredient2}</p>
-                            <p>${details.strIngredient3}</p>
-                            <p>${details.strIngredient4}</p>
-                            <p>${details.strIngredient5}</p>
-                            <p>${details.strIngredient6}</p>
-                            <p>${details.strIngredient7}</p>
-                            <p>${details.strIngredient8}</p>
-                            <p>${details.strIngredient9}</p>
-                            <p>${details.strIngredient10}</p>
+                            <p><i class="fas fa-check-square"></i> ${details.strIngredient1}</p>
+                            <p><i class="fas fa-check-square"></i> ${details.strIngredient2}</p>
+                            <p><i class="fas fa-check-square"></i> ${details.strIngredient3}</p>
+                            <p><i class="fas fa-check-square"></i> ${details.strIngredient4}</p>
+                            <p><i class="fas fa-check-square"></i> ${details.strIngredient5}</p>
                     </div>
                     </div>
             </div>

@@ -1,29 +1,47 @@
 body{
     margin: 0 30px;
+    font-family: "Montserrat";
+    background-color: dimgrey;
 }
 .input-group{
-    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
-.nav-design a{
-    font-size: 20px;
-}
+/* Navigation Bar */
+.navbar {
+    padding: 0 0 1rem;
+  }
+  
+  .navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .nav-item {
+    padding: 0 18px;
+  }
+  
+  .nav-link {
+    font-size: 1.3rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+  }
+
+
+
 #meals-display{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 #meals-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 .meal-item{
-    background-color: honeydew;
+    background-color: lavender;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -32,5 +50,15 @@ body{
 }
 
 .details-img{
-    width: 400px;
+    object-fit: cover;
+    height: 350px;
+}
+
+.fas{
+    color: chocolate;
+}
+
+.in-details{
+    width: 600px;
+    margin-left: 28%;
 }
