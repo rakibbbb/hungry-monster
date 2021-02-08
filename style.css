@@ -1,0 +1,32 @@
+body{
+    margin: 0 30px;
+}
+.input-group{
+    margin-top: 50px;
+}
+
+.nav-design a{
+    font-size: 20px;
+}
+#meals-display{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#meals-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.meal-item{
+    background-color: honeydew;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    margin: 10px;
+}
